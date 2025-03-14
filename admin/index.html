@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Sidebar</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+    
+        <div class="d-flex">
+            <nav class="col-md-3 col-lg-2 d-md-block sidebar" id="selfSidebar">
+                <div class="position-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link fs-5 active">
+                                <i class="fas fa-tachometer-alt icon"></i> Dashboard
+                            </a>
+                        </li>
+            
+                        <li class="nav-item">
+                            <a href="#usersMenu" class="d-flex align-items-center dropdown-btn">
+                                <i class="fas fa-users icon"></i> Users
+                                <i class="fas fa-chevron-right dropdown-icon"></i>
+                            </a>
+                            <ul class="collapse list-unstyled ps-3" id="usersMenu">
+                                <li><a href="#">Add Users</a></li>
+                                <li><a href="#">Users List</a></li>
+                            </ul>
+                        </li>
+            
+                        <li class="nav-item">
+                            <a href="#visitersMenu" class="d-flex align-items-center dropdown-btn">
+                                <i class="fas fa-paper-plane icon"></i> Visitors
+                                <i class="fas fa-chevron-right dropdown-icon"></i>
+                            </a>
+                            <ul class="collapse list-unstyled ps-3" id="visitersMenu">
+                                <li><a href="#">Visitors List</a></li>
+                            </ul>
+                        </li>
+            
+                        <li class="nav-item">
+                            <a href="#bookingMenu" class="d-flex align-items-center dropdown-btn">
+                                <i class="fas fa-receipt icon"></i> Bookings
+                                <i class="fas fa-chevron-right dropdown-icon"></i>
+                            </a>
+                            <ul class="collapse list-unstyled ps-3" id="bookingMenu">
+                                <li><a href="#">Bookings List</a></li>
+                            </ul>
+                        </li>
+            
+                        <li class="nav-item">
+                            <a href="#pakagesMenu" class="d-flex align-items-center dropdown-btn">
+                                <i class="fas fa-box icon"></i> Packages
+                                <i class="fas fa-chevron-right dropdown-icon"></i>
+                            </a>
+                            <ul class="collapse list-unstyled ps-3" id="pakagesMenu">
+                                <li><a href="#">Add Package</a></li>
+                                <li><a href="#">Packages List</a></li>
+                            </ul>
+                        </li>
+            
+                        <li class="nav-item">
+                            <a href="#feedbackMenu" class="d-flex align-items-center dropdown-btn">
+                                <i class="fas fa-comments icon"></i> Feedback
+                                <i class="fas fa-chevron-right dropdown-icon"></i>
+                            </a>
+                            <ul class="collapse list-unstyled ps-3" id="feedbackMenu">
+                                <li><a href="#">Add Feedback</a></li>
+                                <li><a href="#">Feedback List</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+            
+    
+            <!-- Main Content -->
+            <div class="container-fluid p-4">
+                <h2>Dashboard</h2>
+                <p>Welcome to the admin panel.</p>
+            </div>
+        </div>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+    
+    </body>
+    </html>
+    
+
+      <!-- Main Content -->
+<div class="main-content">
+    <div class="container">
+        <h1 class="dashboard-title">Dashboard</h1>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <h5>Ch Shafqat</h5>
+                    <p>Site Owner</p>
+                    <button class="btn btn-primary">View</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <h5>Ch Waqas</h5>
+                    <p>Site Owner</p>
+                    <button class="btn btn-primary">View</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <h5>Ch Uzair</h5>
+                    <p>Site Owner</p>
+                    <button class="btn btn-primary">View</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-card">
+            <h5>Total Users</h5>
+            <p class="stats-number"><i class="fas fa-users"></i> 10</p>
+        </div>
+    </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>

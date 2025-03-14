@@ -1,0 +1,54 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+#wrapper {
+    display: flex;
+}
+.sidebar {
+    /* background-color: #f4f6f8; */
+    background-color: rgb(105, 102, 255);
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+}
+.sidebar a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.sidebar a:hover {
+    background-color: #fff;
+    color: rgb(105, 102, 255);
+}
+.sidebar a.active {
+    background-color: #fff;
+    color: rgb(105, 102, 255);
+}
+.sidebar .icon {
+    margin-right: 10px;
+}
+.sidebar .dropdown-menu {
+    padding-left: 20px;
+}
+
+.dropdown-toggle::after {
+    content: '\f107'; /* FontAwesome down arrow */
+    font-family: 'Font Awesome 5 Free';
+    float: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dropdown-toggle.collapsed::after {
+    transform: rotate(-90deg);
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+}

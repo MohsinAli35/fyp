@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" />
+     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+ 
+     <link rel="stylesheet" href="assets/css/style.css" />
+     <!-- font link  -->
+     <link
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+     />
+</head>
+<body>
+    <style>
+        /* Contact Section */
+#contact {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.section-heading h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section-heading p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.contact-card {
+  background-color: #222;
+  color: #ddd;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.form-hover {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-hover:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.form-control {
+  background-color: #444;
+  color: #ddd;
+  border: 1px solid #555;
+}
+
+.form-control:focus {
+  background-color: #555;
+  color: #fff;
+  border-color: #777;
+}
+
+.btn-custom {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-custom:hover {
+  background-color: #777;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+    </style>
+      <section id="contact" class="container mt-5 fade-in">
+        <div class="section-heading mb-4">
+          <h2>Contact Us</h2>
+          <p>A sanctuary of eternal peace, where memories live on.</p>
+        </div>
+        <div class="container-fluid contact-card">
+          <div class="row">
+            <div class="col-lg-6">
+              <div style="padding: 20px">
+                <h3>Contact Us</h3>
+                <p>Reach out for inquiries, memorial services, or assistance.</p>
+                <p><strong>Email:</strong> support@restingsouls.com</p>
+                <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-hover">
+                <h3>Fill Form</h3>
+                <form>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      name="message"
+                      rows="4"
+                      required
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-custom w-100">
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+  
+            <!-- Left Side: Contact Form -->
+            <!-- <div class="col-md-6">
+              <h2>Contact Us</h2>
+              <p>Have any questions? Feel free to reach out to us.</p>
+              <form>
+                <div class="form-group">
+                  <label for="contactName">Full Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="contactName"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="contactEmail">Email Address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="contactEmail"
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="contactMessage">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="contactMessage"
+                    rows="4"
+                    placeholder="Write your message here..."
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-dark">
+                  Send Message
+                </button>
+              </form>
+            </div> -->
+  
+            <!-- Right Side: Location Map -->
+            <!-- <div class="col-md-6">
+              <h2>Our Location</h2>
+              <p>Visit us at our cemetery location.</p>
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093706!2d144.9537363159043!3d-37.817209742014554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5df0a6f4fb%3A0x5045675218ce840!2sCemetery%20Example!5e0!3m2!1sen!2sus!4v1633302425615!5m2!1sen!2sus"
+                  width="100%"
+                  height="300"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Bootstrap & JS -->
+    <script src="assets/bootstrap/jquery-1.9.1.min.js"></script>
+    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
