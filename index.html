@@ -6,25 +6,32 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Eternal Finds - Home</title>
+    <title>Eternal Find - Home</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" />
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
 
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- font link  -->
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+ <style>
+        .service-card i {
+            font-size: 100px;
+            /* color: sd; */
+            margin-bottom: 15px;
+        }
+    </style>
   </head>
   
   <body class="p-0 bg-white">
     <!-- Navigation Bar -->
-  <div class="container-fluid bg-dark">
-    <nav class="navbar navbar-expand-lg shadow navbar-dark p-3 bg-danger ">
+    <nav class="navbar navbar-expand-lg shadow navbar-dark p-3 bg-primary ">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Eternal Finds</a>
+        <a class="navbar-brand" href="index.html">Eternal Find</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -42,6 +49,12 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#about">Cementeries</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Gift Flowers</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
@@ -51,9 +64,9 @@
             <!-- <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#signInModal">Sign In</a></li> -->
           </ul>
           <div class="d-flex flex-column flex-lg-row align-items-start align-items-lg-end">
-            <div class="mx-2 navbar-icons" data-toggle="modal" data-target="#registerModal">
+            <!-- <div class="mx-2 navbar-icons" data-toggle="modal" data-target="#registerModal">
               <i class="fa fa-user-plus text-white fs-1"></i>
-            </div>
+            </div> -->
             <div class="mx-2 navbar-icons" data-toggle="modal" data-target="#signInModal">
               <i class="fa fa-sign-in text-white fs-1"></i>
             </div>
@@ -63,7 +76,7 @@
         </div>
       </div>
     </nav>
-  </div>
+  
 
     <!-- Banner Section -->
     <!-- Banner Section with Search Fields -->
@@ -72,7 +85,7 @@
       <img
         src="assets/img/banner.jpg"
         class="img-fluid"
-        alt="Eternal Finds Banner"
+        alt="Eternal Find Banner"
       />
       <div class="banner-text">
         <h1>World's Largest Gravesite Collection</h1>
@@ -80,29 +93,7 @@
 
         <!-- Search Form -->
         <form id="searchForm" class="search-form">
-          <!-- <div class="form-row">
-              <div class="col-md-4 mb-2">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Name"
-                />
-              </div>
-              <div class="col-md-4 mb-2">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Middle Name"
-                />
-              </div>
-              <div class="col-md-4 mb-2">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Last Name"
-                />
-              </div>
-            </div> -->
+        
           <div class="form-row">
             <div class="col-md-3 mb-2">
               <input type="text" class="form-control" placeholder="Name" />
@@ -127,10 +118,105 @@
         </form>
       </div>
     </section>
+
+  <!-- Recent Obituaries -->
+  <div class="container-fluid bg-light">
+    <section id="services" class="container mt-5 py-5 fade-in">
+      <div class="section-heading mb-4">
+        <h2>Recent Obituaries</h2>
+        <p>Find the obituary you are seeking, and send flowers or gifts to the family.</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+         <div class="row">
+          <div class="col-lg-4">
+            <img src="assets/img/o (3).jpg" class="img-fluid rounded w-75 h-75" alt="Obituaries">
+          </div>
+          <div class="col-lg-8">
+            <h5 class="mt-3 text-primary" >Jonus adam</h5>
+            <p class="text-muted mb-1">May 8, 2015</p>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing do...</p>
+            <a href="#" class=" btm text-decoration-none bg-primary text-white p-2 rounded" >Read life story</a>
+          </div>
+         </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+           <div class="col-lg-4">
+             <img src="assets/img/o (2).jpg" class="img-fluid w-75 h-75 rounded" alt="Obituaries">
+           </div>
+           <div class="col-lg-8">
+             <h5 class="mt-3 text-primary" >Elesien George</h5>
+             <p class="text-muted mb-1">May 8, 2015</p>
+             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing do...</p>
+             <a href="#" class="text-decoration-none bg-primary text-white p-2 rounded" >Read life story</a>
+           </div>
+          </div>
+         </div>
+         <div class="col-lg-6">
+          <div class="row">
+           <div class="col-lg-4">
+             <img src="assets/img/o (4).jpg" class="img-fluid rounded w-75 h-75" alt="Obituaries">
+           </div>
+           <div class="col-lg-8">
+             <h5 class="mt-3 text-primary" >Michelle Eric</h5>
+             <p class="text-muted mb-1">May 8, 2015</p>
+             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing do...</p>
+             <a href="#" class="text-decoration-none bg-primary text-white p-2 rounded" >Read life story</a>
+           </div>
+          </div>
+         </div>
+         <!-- <div class="col-lg-6">
+          <div class="row">
+           <div class="col-lg-4">
+             <img src="assets/img/o (4).jpg" class="img-fluid rounded w-75 h-75" alt="Obituaries">
+           </div>
+           <div class="col-lg-8">
+             <h5 class="mt-3 text-primary" >Michelle Eric</h5>
+             <p class="text-muted mb-1">May 8, 2015</p>
+             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing do...</p>
+             <a href="#" class="text-decoration-none" style="color: #5a2b2b;">Read life story</a>
+           </div>
+          </div>
+         </div> -->
+         <!-- <div class="col-lg-6">
+          <div class="row">
+           <div class="col-lg-4">
+             <img src="assets/img/o (5).jpg" class="img-fluid rounded w-75 h-75" alt="Obituaries">
+           </div>
+           <div class="col-lg-8">
+             <h5 class="mt-3 text-primary" >Michelle Eric</h5>
+             <p class="text-muted mb-1">May 8, 2015</p>
+             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing do...</p>
+             <a href="#" class="text-decoration-none" style="color: #5a2b2b;">Read life story</a>
+           </div>
+          </div>
+         </div> -->
+         <div class="col-lg-6">
+          <div class="row">
+           <div class="col-lg-4">
+             <img src="assets/img/o (6).jpg" class="img-fluid rounded w-75 h-75" alt="Obituaries">
+           </div>
+           <div class="col-lg-8">
+             <h5 class="mt-3 text-primary" >Dusttin Berlin</h5>
+             <p class="text-muted mb-1">May 8, 2015</p>
+             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing do...</p>
+             <a href="#" class="text-decoration-none bg-primary text-white p-2 rounded" >Read life story</a>
+           </div>
+          </div>
+         </div>
+         
+      </div>
+       <h4 class=" my-5 bg-primary text-white btn mx-auto d-block w-25 text-center">View All Obituaries</h4>
+    </section>
+  
+  </div>
+
+
     <!-- About Us Section -->
     <section id="about" class="container mt-5 fade-in">
       <div class="section-heading mb-4">
-        <h2>About Eternal Finds</h2>
+        <h2>About Eternal Find</h2>
         <p>A sanctuary of eternal peace, where memories live on.</p>
       </div>
       <div class="row align-items-center">
@@ -139,15 +225,15 @@
           <img
             src="assets/img/about-us.jpg"
             class="img-fluid rounded"
-            alt="About Eternal Finds"
+            alt="About Eternal Find"
           />
         </div> -->
 
         <!-- Right Side: Text -->
         <div class="col-md-6">
-          <!-- <h2>About Eternal Finds</h2> -->
+          <!-- <h2>About Eternal Find</h2> -->
           <p>
-            At Eternal Finds, we are dedicated to providing a serene and
+            At Eternal Find, we are dedicated to providing a serene and
             peaceful final resting place for your loved ones. Our mission is to
             create a tranquil environment where families can honor and cherish
             their ancestors with dignity and respect.
@@ -161,9 +247,9 @@
         </div>
         <div class="col-md-6">
           <img
-            src="assets/img/about-us.jpg"
-            class="img-fluid rounded"
-            alt="About Eternal Finds"
+            src="assets/img/phil-hearing-IYfp2Ixe9nM-unsplash.jpg"
+            class=" rounded"
+            alt="About Eternal Find"
           />
         </div>
       </div>
@@ -178,32 +264,55 @@
         </div>
         <div class="row">
           <div class="col-lg-4">
-            <div class="service-card">
-              <h3>Coffins Services</h3>
+            <div class="service-card bg-white text-primary">
+              <i class=" fas fa-church"></i>
+
+              <h5>Coffins Services</h5>
               <p>
                 Honoring loved ones with personalized ceremonies and tributes.
               </p>
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="service-card">
-              <h3>Coffins Services</h3>
-              <p>
-                Honoring loved ones with personalized ceremonies and tributes.
-              </p>
-            </div>
+            <div class="service-card bg-white text-primary">
+              <i class="fas fa-user-check"></i>
+                <h5>Find Obituaries</h5>
+              <p>Have a look at recently deceased individuals in your nearest areas.</p>
+          </div>
           </div>
           <div class="col-lg-4">
-            <div class="service-card">
-              <h3>Coffins Services</h3>
-              <p>
-                Honoring loved ones with personalized ceremonies and tributes.
-              </p>
-            </div>
+            <div class="service-card bg-white text-primary">
+              <i class="fas fa-cross"></i>
+              <h5>Burial Services</h5>
+              <p>Have a final resting place for dear ones with the option of personal celebration.</p>
           </div>
-      
+       </div>
+       <div class="col-md-4 my-5">
+        <div class="service-card bg-white text-primary">
+          <i class="fa-solid fa-clipboard-list"></i>
+                  <h5>Find Cemeteries</h5>
+            <p>Check out the nearest cemeteries and make an instant booking.</p>
+        </div>
+    </div>
+    <div class="col-md-4 my-5">
+      <div class="service-card bg-white text-primary">
+        <i class="fa-solid fa-umbrella"></i>
+          <h5>Grief Support</h5>
+          <p>Check out the nearest cemeteries and make an instant booking.</p>
+      </div>
+  </div>
+  <div class="col-md-4 my-5">
+    <div class="service-card bg-white text-primary">
+      <i class="fa-solid fa-cannabis"></i>
+        <h5>Send Flowers</h5>
+        <i class=" fa fa-light fa-coffin-cross"></i>
+
+        <p>Check out the nearest cemeteries and make an instant booking.</p>
+    </div>
+</div>
         </div>
       </section>
+    
     </div>
     <!-- Boking Section -->
     <section id="booking-section" class="container-fluid bg-light mt-5 fade-in">
@@ -220,7 +329,7 @@
             <div class="booking-info">
               <h3>Contact Information</h3>
               <p>Provide your details to confirm your booking.</p>
-              <p><strong>Email:</strong> support@restingsouls.com</p>
+              <p><strong>Email:</strong> eternalfind@restingsouls.com</p>
               <p><strong>Phone:</strong> +1 (123) 456-7890</p>
             </div>
           </div>
@@ -277,7 +386,7 @@
             <div style="padding: 20px">
               <h3>Contact Us</h3>
               <p>Reach out for inquiries, memorial services, or assistance.</p>
-              <p><strong>Email:</strong> support@restingsouls.com</p>
+              <p><strong>Email:</strong> eternalfind@restingsouls.com</p>
               <p><strong>Phone:</strong> +1 (123) 456-7890</p>
             </div>
           </div>
@@ -329,7 +438,7 @@
 
     <!-- Footer -->
     <footer class="text-center bg-dark text-white py-2">
-      <p class="m-0">© 2025 Eternal Finds. All rights reserved.</p>
+      <p class="m-0">© 2025 Eternal Find. All rights reserved.</p>
     </footer>
     <!-- Register Modal -->
     <div

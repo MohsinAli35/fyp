@@ -3,6 +3,11 @@ body {
     background: #f4f4f4;
     /* text-align: center; */
 }
+a.text-decoration-none:hover {
+    background-color: #5a5d4d !important; /* Darker brown on hover */
+    color: white !important; /* Keep text white on hover */
+    text-decoration: none !important; /* Remove underline */
+}
 .jumbotron {
     background: url('assets/img/banner.jpg') no-repeat center center/cover;
     color: white;
@@ -275,18 +280,21 @@ body {
     text-align: center;
   }
   .service-card {
-    background-color: #5a5d4d;
-    color: #ddd;
+    /* background-color: #ddd; */
+    /* color: #ddd; */
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
-  }
+}
 
   .service-card:hover {
     transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #d3d5c6 !important;
+   border: 1px solid #5a5d4d !important; 
   }
 
   .service-card h3 {
