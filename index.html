@@ -24,12 +24,16 @@
             /* color: sd; */
             margin-bottom: 15px;
         }
+        .form-control:focus {
+            border-color: #5a5d4d !important; /* #5a5d4d color on focus */
+            box-shadow: 0 0 5px rgba(90, 93, 77, 0.5) !important;
+        }
     </style>
   </head>
   
   <body class="p-0 bg-white">
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg shadow navbar-dark p-3 bg-primary ">
+    <nav class="navbar navbar-expand-lg shadow navbar-dark p-3 text-primary bg-primary   ">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Eternal Find</a>
         <button
@@ -67,12 +71,10 @@
             <!-- <div class="mx-2 navbar-icons" data-toggle="modal" data-target="#registerModal">
               <i class="fa fa-user-plus text-white fs-1"></i>
             </div> -->
-            <div class="mx-2 navbar-icons" data-toggle="modal" data-target="#signInModal">
-              <i class="fa fa-sign-in text-white fs-1"></i>
+            <div class=" mx-2 navbar-icons" data-toggle="modal" data-target="#signInModal">
+              <i class="fa fa-user   fs-1"></i>
             </div>
           </div>
-          
-          
         </div>
       </div>
     </nav>
@@ -84,7 +86,7 @@
       <div class="banner-overlay"></div>
       <img
         src="assets/img/banner.jpg"
-        class="img-fluid"
+        class="img-fluid "
         alt="Eternal Find Banner"
       />
       <div class="banner-text">
@@ -324,49 +326,107 @@
       </div>
       <div class="container-fluid  booking-card p-4">
         <div class="row">
-          <!-- Left Side: Contact Info -->
-          <div class="col-lg-6">
-            <div class="booking-info">
-              <h3>Contact Information</h3>
-              <p>Provide your details to confirm your booking.</p>
-              <p><strong>Email:</strong> eternalfind@restingsouls.com</p>
-              <p><strong>Phone:</strong> +1 (123) 456-7890</p>
-            </div>
-          </div>
-          <!-- Right Side: Booking Form -->
-          <div class="col-lg-6">
-            <div class="booking-form-container">
-              <h3>Book Now</h3>
-              <form class="booking-form">
-                <div class="mb-3">
-                  <label for="booking-name" class="form-label">Full Name</label>
-                  <input type="text" class="form-control" id="booking-name" required>
+          <div class="col-lg-12">
+            <div class="booking-form-container ">
+              <h3 class="text-center">Book Now</h3>
+              <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>First Name</label>
+                        <input type="text" class="form-control" placeholder="Enter First Name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Last Name</label>
+                        <input type="text" class="form-control" placeholder="Enter Last Name">
+                    </div>
                 </div>
-                <div class="mb-3">
-                  <label for="booking-email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="booking-email" required>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                      <label>CNIC</label>
+                      <input type="text" class="form-control" placeholder="Enter CNIC (XXXXX-XXXXXXX-X)">
+                  </div>
+                  <div class="col-md-6 mb-3">
+                      <label>Phone Number</label>
+                      <input type="tel" class="form-control" placeholder="Enter Phone Number">
+                  </div>
+              </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label>Age</label>
+                        <input type="number" class="form-control" placeholder="Enter Age">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Gender</label>
+                        <select class="form-control">
+                            <option selected>Select Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Date of Birth (DOB)</label>
+                        <input type="date" class="form-control">
+                    </div>
                 </div>
-                <div class="mb-3">
-                  <label for="booking-service" class="form-label">Select Service</label>
-                  <select class="form-select" id="booking-service" required>
-                    <option value="">Choose...</option>
-                    <option value="memorial">Memorial Service</option>
-                    <option value="consultation">Family Consultation</option>
-                    <option value="burial">Burial Arrangement</option>
-                  </select>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Date of Death (DOD)</label>
+                        <input type="date" class="form-control">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Province</label>
+                        <select class="form-control">
+                            <option selected>Select Province</option>
+                            <option>Punjab</option>
+                            <option>Sindh</option>
+                            <option>Khyber Pakhtunkhwa</option>
+                            <option>Balochistan</option>
+                            <option>Gilgit-Baltistan</option>
+                            <option>Azad Jammu & Kashmir</option>
+                            <option>Islamabad Capital Territory</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="mb-3">
-                  <label for="booking-date" class="form-label">Select Date</label>
-                  <input type="date" class="form-control" id="booking-date" required>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>City</label>
+                        <select class="form-control">
+                            <option selected>Select City</option>
+                            <option>Lahore</option>
+                            <option>Karachi</option>
+                            <option>Islamabad</option>
+                            <option>Rawalpindi</option>
+                            <option>Faisalabad</option>
+                            <option>Peshawar</option>
+                            <option>Quetta</option>
+                            <option>Multan</option>
+                            <option>Sargodha</option>
+                            <option>Sialkot</option>
+                            <option>Bahawalpur</option>
+                            <option>Gujranwala</option>
+                            <option>Hyderabad</option>
+                            <option>Mardan</option>
+                            <option>Abbottabad</option>
+                            <option>Swat</option>
+                            <option>Sukkur</option>
+                            <option>Muzaffarabad</option>
+                            <option>Gilgit</option>
+                            <option>Mirpur</option>
+                            <option>Chakwal</option>
+                            <option>Rahim Yar Khan</option>
+                            <option>Nawabshah</option>
+                            <option>Larkana</option>
+                            <option>Attock</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Graveyard</label>
+                        <input type="text" class="form-control" placeholder="Enter Graveyard Name">
+                    </div>
                 </div>
-                <div class="mb-3">
-                  <label for="booking-time" class="form-label">Select Time</label>
-                  <input type="time" class="form-control" id="booking-time" required>
-                </div>
-                <button type="submit" class="btn booking-btn w-100">
-                  Confirm Booking
-                </button>
-              </form>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
             </div>
           </div>
         </div>
